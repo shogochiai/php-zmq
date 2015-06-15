@@ -1,16 +1,9 @@
 {
-  "repositories": [
-    {
-      "type":"package",
-      "package": {
-        "name": "shogochiai/php-zmq",
-        "version":"master",
-        "source": {
-          "url": "https://github.com/shogochiai/php-zmq.git",
-          "type": "git",
-          "reference":"master"
-        }
-      }
-    }
-  ]
+  "name": "shogochiai/php-zmq",
+  "version":"master",
+  "source": {
+    "url": "https://github.com/shogochiai/php-zmq.git",
+    "type": "git",
+    "reference":"master"
+  }
 }
