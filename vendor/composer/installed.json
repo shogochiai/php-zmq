@@ -1,0 +1,42 @@
+[
+    {
+        "name": "moriony/php-zmq-stubs",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/moriony/php-zmq-stubs.git",
+            "reference": "5a2e45b8a86ad71a5f67a0a37568926f4f9fce52"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/moriony/php-zmq-stubs/zipball/5a2e45b8a86ad71a5f67a0a37568926f4f9fce52",
+            "reference": "5a2e45b8a86ad71a5f67a0a37568926f4f9fce52",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5"
+        },
+        "time": "2013-08-17 08:42:00",
+        "type": "library",
+        "installation-source": "source",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Vitaliy Chesnokov",
+                "email": "demateus@gmail.com"
+            }
+        ],
+        "description": "ZeroMQ stubs for IDE.",
+        "homepage": "https://github.com/moriony/php-zmq-stubs",
+        "keywords": [
+            "stub",
+            "stubs",
+            "zeromq",
+            "zmq"
+        ]
+    }
+]

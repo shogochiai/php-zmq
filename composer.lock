@@ -1,0 +1,60 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "41441b39cb7f3a62c9425cf6b8ab62e2",
+    "packages": [
+        {
+            "name": "moriony/php-zmq-stubs",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moriony/php-zmq-stubs.git",
+                "reference": "5a2e45b8a86ad71a5f67a0a37568926f4f9fce52"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moriony/php-zmq-stubs/zipball/5a2e45b8a86ad71a5f67a0a37568926f4f9fce52",
+                "reference": "5a2e45b8a86ad71a5f67a0a37568926f4f9fce52",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vitaliy Chesnokov",
+                    "email": "demateus@gmail.com"
+                }
+            ],
+            "description": "ZeroMQ stubs for IDE.",
+            "homepage": "https://github.com/moriony/php-zmq-stubs",
+            "keywords": [
+                "stub",
+                "stubs",
+                "zeromq",
+                "zmq"
+            ],
+            "time": "2013-08-17 08:42:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "moriony/php-zmq-stubs": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.4.0"
+    },
+    "platform-dev": []
+}
