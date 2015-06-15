@@ -1,5 +1,10 @@
 {
   "name": "shogochiai/php-zmq",
   "type": "library",
-  "description": "Zero MQ library for php"
+  "description": "Zero MQ library for php",
+  "require": {
+    "php": ">=5.4.0",
+    "ext-zmq": "*",
+    "moriony/php-zmq-stubs": "dev-master"
+  }
 }
