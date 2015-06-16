@@ -1,0 +1,18 @@
+zmq.lo: /Users/sgtn/_dev/2015/php-zmq/zmq.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/Users/sgtn/_dev/2015/php-zmq $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /Users/sgtn/_dev/2015/php-zmq/zmq.c -o zmq.lo 
+zmq_pollset.lo: /Users/sgtn/_dev/2015/php-zmq/zmq_pollset.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/Users/sgtn/_dev/2015/php-zmq $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /Users/sgtn/_dev/2015/php-zmq/zmq_pollset.c -o zmq_pollset.lo 
+zmq_device.lo: /Users/sgtn/_dev/2015/php-zmq/zmq_device.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/Users/sgtn/_dev/2015/php-zmq $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /Users/sgtn/_dev/2015/php-zmq/zmq_device.c -o zmq_device.lo 
+zmq_sockopt.lo: /Users/sgtn/_dev/2015/php-zmq/zmq_sockopt.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/Users/sgtn/_dev/2015/php-zmq $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /Users/sgtn/_dev/2015/php-zmq/zmq_sockopt.c -o zmq_sockopt.lo 
+zmq_fd_stream.lo: /Users/sgtn/_dev/2015/php-zmq/zmq_fd_stream.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/Users/sgtn/_dev/2015/php-zmq $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /Users/sgtn/_dev/2015/php-zmq/zmq_fd_stream.c -o zmq_fd_stream.lo 
+zmq_clock.lo: /Users/sgtn/_dev/2015/php-zmq/zmq_clock.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/Users/sgtn/_dev/2015/php-zmq $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /Users/sgtn/_dev/2015/php-zmq/zmq_clock.c -o zmq_clock.lo 
+$(phplibdir)/zmq.la: ./zmq.la
+	$(LIBTOOL) --mode=install cp ./zmq.la $(phplibdir)
+
+./zmq.la: $(shared_objects_zmq) $(ZMQ_SHARED_DEPENDENCIES)
+	$(LIBTOOL) --mode=link $(CC) $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) $(LDFLAGS) -o $@ -export-dynamic -avoid-version -prefer-pic -module -rpath $(phplibdir) $(EXTRA_LDFLAGS) $(shared_objects_zmq) $(ZMQ_SHARED_LIBADD)
+

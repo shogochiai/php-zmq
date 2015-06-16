@@ -1,5 +1,6 @@
 {
   "name": "shogochiai/php-zmq",
   "type": "library",
-  "description": "Zero MQ library for php"
+  "description": "Zero MQ library for php",
+  "minimum-stability": "stable"
 }
